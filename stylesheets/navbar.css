@@ -1,0 +1,13 @@
+.container {
+  background-color: white;
+}
+.navbar-brand {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+.nav-item {
+  font-family: "Cabin", sans-serif;
+}
+.navbar-text {
+  font-family: "Comforter Brush", cursive;
+}
