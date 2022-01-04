@@ -6,5 +6,10 @@
   height: 100%;
 }
 #wbd {
-  font-family: "Zen Antique Soft", serif;
+  font-family: "Luxurious Roman", cursive;
+  height: 45vh;
+}
+#quote {
+  font-family: "Caveat", cursive;
+  height: 40vh;
 }

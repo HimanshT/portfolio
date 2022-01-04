@@ -8,6 +8,14 @@
 .nav-item {
   font-family: "Cabin", sans-serif;
 }
+
 .navbar-text {
   font-family: "Comforter Brush", cursive;
+}
+.nav-link {
+  border-bottom: 0.25rem solid transparent;
+}
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: black;
 }
