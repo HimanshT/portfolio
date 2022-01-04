@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
@@ -16,18 +17,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dosis:wght@200&family=Zen+Antique+Soft&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/b6042cd4ed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./stylesheets/navbar.css">
     <link rel="stylesheet" href="./stylesheets/intro.css">
     <link rel="stylesheet" href="./stylesheets/projects.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dosis:wght@200&family=Zen+Antique+Soft&display=swap"
-        rel="stylesheet">
+
     <title>HT</title>
 </head>
 
-<body class="d-flex flex-column" style="background-color: #f1faee;">
+<body class="d-flex flex-column">
     <!-- Navbar -->
+    <script src="app.js"></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
         <div class="container-fluid">
             <a class="navbar-brand">HT</a>
@@ -39,14 +43,14 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a href="#pcontainer" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a href="#footer" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <span class="navbar-text ">
-                    developers for the world
+                    <p id="text">developers for the world</p>
                 </span>
             </div>
         </div>
@@ -93,7 +97,7 @@
     </div>
 
     <!-- projects -->
-    <div class="containter mb-3">
+    <div id="pcontainer" class="containter mb-3">
         <div class="row justify-content-center">
             <div class="col-4">
                 <div id="projects" class="btn-grad fs-1 text-center display-2">My Projects</div>
@@ -105,7 +109,7 @@
     <!-- yourTrip -->
     <div class="container mb-3">
         <div class="row">
-            <div class="card mb-3">
+            <div class="card">
                 <img src="./images/yourtrip_img.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title text-center" style="text-decoration: underline;">yourTrip</h5>
@@ -122,7 +126,8 @@
                         <li>
                             Basic features of adding maps and images
                         </li>
-                        <a href="https://yrtrip.herokuapp.com/" class="btn btn-dark mt-1 mb-1">View Project</a>
+                        <a id="view" href="https://yrtrip.herokuapp.com/" class="btn btn-dark mt-1 mb-1">View
+                            Project</a>
                     </ul>
                 </div>
             </div>
@@ -130,9 +135,9 @@
     </div>
 
     <!-- portfolio -->
-    <div class="container">
+    <div class="container mb-3">
         <div class="row">
-            <div class="card mb-3">
+            <div class="card">
                 <img src="./images/portfolio.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title text-center" style="text-decoration: underline;">Portfolio Website</h5>
@@ -149,7 +154,7 @@
                         <li>
                             My first website
                         </li>
-                        <a href="app.html" class="btn btn-dark mt-1 mb-1">View Project</a>
+                        <a id="view" href="app.html" class="btn btn-dark mt-1 mb-1">View Project</a>
                     </ul>
                 </div>
             </div>
@@ -158,12 +163,13 @@
 
     <!-- footer -->
 
-    <footer class="footer mt-auto py-3 bg-dark">
-        <div class="container d-flex bg-dark">
-            <span class="me-auto p-2" style="color: white;">Developed by: HT </span>
-            <span class="p-2"><a style="color: white;" href="https://github.com/HimanshT"> <b
+    <footer id="footer" class="footer mt-auto py-3 bg-light opacity-75">
+        <div class="container d-flex bg-light">
+            <span class="me-auto p-2" style="color: brown;">Developed by: HT </span>
+            <span id="btmlink" class="p-2"><a style="color: brown;" href="https://github.com/HimanshT"> <b
                         class="fab fa-github ">Github</b></a></span>
-            <span class="p-2"><a style="color:white" href="https://www.linkedin.com/in/himanshu-tripathi-mnnit/"><b
+            <span id="btmlink" class="p-2"><a style="color:brown"
+                    href="https://www.linkedin.com/in/himanshu-tripathi-mnnit/"><b
                         class="fab fa-linkedin">LinkedIn</b></a></span>
         </div>
     </footer>
